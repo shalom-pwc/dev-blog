@@ -1,32 +1,24 @@
 # dev-blog
-this repo will 
+## CLI 
+### mine
 
-## CLI
+## list of programing language
+- html
+   - vs code
+- js 
+- css
 
-### HTML-CSS
-this is my html 
-
-- helo
-- hjkk
-
-
-    -bm
-- mkk
-
-1 jjkjk
-
-2jjjj
- 
- ![this is link](https://www.bookfactory.ch/img/cms/homepage/bookfactory-wandbild-sonnenuntergang-m.png.pagespeed.ce.IL65iHJMvk.png)
-
- - [ ] to do ckb
- - [ ] tell
- - [x] jfjr
-
-### hello
-
-### *bye*
-
-#### ~~mine~~
+hello i love coding
 
 <hr>
+
+- [ ] he
+- [ ] nk
+
+![Cat Image](https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=f6a7b1af&itok=1fdekAh2)
+
+**Gmail**
+
+*Signin*
+
+~~work~~
