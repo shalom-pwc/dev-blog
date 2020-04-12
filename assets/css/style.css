@@ -33,7 +33,7 @@ a {
   outline: none;
 }
 a:hover {
-  color: darkred;
+  color: lightgray;
 }
 
 /*FORM ELEMENT*/
@@ -46,7 +46,7 @@ input, input:focus{
 }
 
 h1,h2 {
- 
+  font-weight: bold;
 }
 
 p{
@@ -58,6 +58,15 @@ p{
 /* HELPER CLASSES
 -------*/
 
+
+/* LAYOUT
+-------*/
+
+
+/* MEDIA QUERIES
+-------*/
+
+/*index.html header*/
 header {
   background-color: white;
   box-shadow: 0 1px 5px #bdbdbd;
@@ -86,7 +95,7 @@ header ul li a {
   padding: 20px;
   margin-right: 100px;
 }
-
+/*main*/
 main{
   background-image: url(https://researchdigest.files.wordpress.com/2016/01/005c3-thinkstockphotos-466086694.jpg);
   width: 100%;
@@ -118,7 +127,7 @@ main button {
 h4 {
   font-size: 30px;
 }
-
+/*footer*/
 footer {
   width: 100%;
   height: 150px;
@@ -138,8 +147,11 @@ footer a i {
   height: 100px;
   background-color: orange;
 }
-/* LAYOUT
--------*/
+
+
+/*about.html header*/
+
+/*about.html header*/
 .aboutheader {
   background-image: url(https://4.bp.blogspot.com/-H0ysE6r6ZXk/UvflJgJbELI/AAAAAAAACAw/CH997hK7izc/s1600/The+Top+5+Sexiest+Female+Programmers+in+the+World+%28Jade+Raymond%29.JPG);
   width: 70%;
@@ -150,7 +162,3 @@ footer a i {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
-/* MEDIA QUERIES
--------*/
