@@ -23,17 +23,16 @@ body {
   font-size: 1rem;
   font-family: sans-serif;
   color: #212121;
-  line-height: 1.5;
+  line-height: 1.62;
 }
 
 /*LINKS*/
 a {
   text-decoration: none;
-  color: black;
   outline: none;
 }
 a:hover {
-  
+  cursor: pointer;
 }
 
 /*FORM ELEMENT*/
@@ -42,11 +41,11 @@ button {
   border: 0;
 }
 input, input:focus{
-  border: none;
+
 }
 
 h1,h2 {
-  font-weight: bold;
+  font-weight: 400;
 }
 
 p{
@@ -66,7 +65,7 @@ p{
 /* MEDIA QUERIES
 -------*/
 
-/*index.html header*/
+/*header is the same for all html pages */
 header {
   background-color: white;
   box-shadow: 0 1px 5px #bdbdbd;
@@ -77,10 +76,10 @@ header {
 
 }
 
-header h3{
+header h2{
   float: left;
   padding: 20px;
-  color: orange;
+  color: #ffa000;
 }
 
 
@@ -97,7 +96,9 @@ header ul li a {
   padding: 20px;
   margin-right: 100px;
 }
-/*main*/
+
+/*main for index.html*/
+
 .indexmain{
   background-image: url(https://researchdigest.files.wordpress.com/2016/01/005c3-thinkstockphotos-466086694.jpg);
   width: 100%;
@@ -108,7 +109,7 @@ header ul li a {
   margin-left: 80px;
 }
 .indexmain h1 {
-  font-size: 80px;
+  font-size: 60px;
 
 }
 .indexmain button {
@@ -116,7 +117,7 @@ header ul li a {
   padding: 15px 40px;
 
 }
-
+/*section in index.html with four articles*/
 .sectext1{
   width: 60%;
   margin: 40px;
@@ -127,31 +128,60 @@ header ul li a {
 h4 {
   font-size: 30px;
 }
-/*footer*/
+/*footer is the same in all pages*/
 footer {
   width: 100%;
   text-align: center;
 }
 
 footer a i {
-  margin-right: 30px;
-  padding: 20px;
+  padding: 15px;
   color: black;
 }
 
 .footertext {
   width: 100%;
   background-color: orange;
+  padding: 10px;
 }
 
 
-/*about.html header*/
-
-/*about.html header*/
+/*about.main for about page*/
 .about-main {
   width: 60%;
   margin: 20px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+.about-main h1 {
+  font-size: 30px;
+}
+
+/*post.main for post page*/
+.post-main {
+  width: 60%;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: start;
+}
+.post-main h1{
+  font-size: 25px;
+}
+.post-main small{
+  font-size: 14px;
+}
+.post-code {
+   background-color: black;
+   color: blanchedalmond;
+}
+
+.main-contact {
+  width: 60%;
+  margin: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: start;
+
 }
