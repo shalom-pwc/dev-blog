@@ -21,7 +21,7 @@ html{
 
 body {
   font-size: 1rem;
-  font-family: sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Ubuntu,Oxygen,Cantarell,open sans,helvetica neue, sans-serif;
   color: #212121;
   line-height: 1.62;
 }
@@ -79,10 +79,11 @@ header {
   position: fixed;
 }
 
-header h2{
+header h2 a{
   float: left;
   padding: 20px;
   color: #ffa000;
+  margin-left: 70px;
 }
 
 
@@ -118,6 +119,10 @@ header ul li a {
 .indexmain button {
   margin-top: 50px;
   padding: 15px 40px;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
 
 }
 /*section in index.html with four articles*/
@@ -131,22 +136,7 @@ header ul li a {
 h3 {
   font-size: 30px;
 }
-/*footer is the same in all pages*/
-footer {
-  width: 100%;
-  text-align: center;
-}
 
-footer a i {
-  padding: 15px;
-  color: black;
-}
-
-.footertext {
-  width: 100%;
-  background-color: orange;
-  padding: 10px;
-}
 
 
 /*about.main for about page*/
@@ -189,4 +179,30 @@ footer a i {
   margin-right: auto;
   text-align: start;
 
+}
+
+/*footer is the same in all pages*/
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+footer a i {
+  padding: 15px;
+  color: black;
+}
+
+.footer-contact {
+  background-color: orange;
+  padding: 20px;
+  text-align: start;
+  
+  
+}
+.footer-contact a {
+  color: white;
+  padding: 10px;
+}
+.footer-contact small {
+  margin-left: 700px;
 }
