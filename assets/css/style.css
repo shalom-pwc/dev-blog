@@ -490,8 +490,9 @@ footer a  {
   background-color: orange;
   padding: 20px;
   text-align: start;
-  
-  
+}
+.contact-name {
+  color: white;
 }
 .footer-contact a {
   color: black;
@@ -535,9 +536,7 @@ https://www.w3schools.com/whatis/whatis_responsive.asp
    display: block;
    padding: 3px;
  }
- .contact-name {
-   color: white;
- }
+ 
  .footer-contact {
    padding: 10px;
  }
