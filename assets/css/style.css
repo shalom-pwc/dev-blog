@@ -30,41 +30,102 @@ body {
 a {
   text-decoration: none;
   outline: none;
+  color: brown;
 }
 a:hover {
   cursor: pointer;
+  color: orange;
 }
 
 /*FORM ELEMENT*/
 
 button {
   border: 0;
+  border: none;
 }
-input, input:focus{
-
-}
-
+/*TITLES*/
 h1,h2 {
   font-weight: 400;
+
 }
 
 p{
   margin-bottom: 1em; /*16px*/
 }
 
+img {
+
+}
  
 
 /* HELPER CLASSES
--------*/
-
+-------------------------------------------------*/
+/*Typography
+--------------------------*/
 /*FONT FAMILY*/
 .font {
   font-family: serif;
 }
-
+.noto-sans {
+  font-family: noto sans, sans-serif;
+}
+.roboto {
+  font-family: roboto, sans-serif;
+}
+.ubuntu {
+  font-family: Ubuntu, sans-serif;
+}
+.oxygen {
+  font-family: oxygen, sans-serif;
+}
+.cantarell {
+  font-family: cantarell, sans-serif;
+}
+.open sans {
+  font-family: open sans, sans-serif;
+}
 /*TYPOGRAPY*/
 .bold {
   font-weight: bold;
+}
+
+.italic {
+  font-weight: bold italic;
+}
+/*Line heights*/
+.lh-1 {
+  line-height: 1;
+}
+.lh-1-2 {
+  line-height: 1.2;
+}
+
+/*FONT SIZE*/
+.f-s-1 {
+  font-size: 1em;
+}
+.f-s-2 {
+  font-size: 1.25em;
+}
+.f-s-3 {
+  font-size: 1.5em;
+}
+.f-s-4 {
+  font-size: 1.75em;
+}
+.f-s-5 {
+  font-size: 2em;
+}
+
+/*Colors*/
+.orange {
+  color: orange;
+}
+.black {
+ color: #000;
+}
+.white {
+  color: #fff;
 }
 
 /*MARGIN*/
@@ -84,35 +145,193 @@ m-t-5 {
   top: 2rem;
 }
 
+.m-b-1 {
+  margin-bottom: 1em;
+}
+.m-b-2 {
+  margin-bottom: 1.25em;
+}
+.m-b-3 {
+  margin-bottom: 1.5em;
+}
+.m-b-4 {
+  margin-bottom: 1.75em;
+}
+.m-b-5 {
+  margin-bottom: 2em;
+}
+
+.m-r-1 {
+  margin-bottom: 1em;
+}
+.m-r-2 {
+  margin-bottom: 1.25em;
+}
+.m-r-3 {
+  margin-bottom: 1.5em;
+}
+.m-r-4 {
+  margin-bottom: 1.75em;
+}
+.m-r-5 {
+  margin-bottom: 2em;
+}
+
+.m-l-1 {
+  margin-bottom: 1em;
+}
+.m-l-2 {
+  margin-bottom: 1.25em;
+}
+.m-l-3 {
+  margin-bottom: 1.5em;
+}
+.m-l-4 {
+  margin-bottom: 1.75em;
+}
+.m-l-5 {
+  margin-bottom: 2em;
+}
+
 /*PADDING*/
 
-p-t-1 {
-  top: 1rem;
+.p-t-1 {
+  margin-top: 1em;
 }
-p-t-1 {
-  top: 1.2rem;
+.p-t-2 {
+  margin-top: 1.25em;
 }
-p-t-1 {
-  top: 1.5rem;
+.p-t-3 {
+  margin-top: 1.5em;
 }
-p-t-1 {
-  top: 1.75rem;
+.p-t-4 {
+  margin-top: 1.75em;
 }
-p-t-1 {
-  top: 2rem;
+.p-t-5 {
+  margin-top: 2em;
+}
+
+.p-b-1 {
+  margin-bottom: 1em;
+}
+.p-b-2 {
+  margin-bottom: 1.25em;
+}
+.p-b-3 {
+  margin-bottom: 1.5em;
+}
+.p-b-4 {
+  margin-bottom: 1.75em;
+}
+.p-b-5 {
+  margin-bottom: 2em;
+}
+
+.p-r-1 {
+  margin-bottom: 1em;
+}
+.mp-r-2 {
+  margin-bottom: 1.25em;
+}
+.p-r-3 {
+  margin-bottom: 1.5em;
+}
+.p-r-4 {
+  margin-bottom: 1.75em;
+}
+.p-r-5 {
+  margin-bottom: 2em;
+}
+
+.p-l-1 {
+  margin-bottom: 1em;
+}
+.p-l-2 {
+  margin-bottom: 1.25em;
+}
+.p-l-3 {
+  margin-bottom: 1.5em;
+}
+.p-l-4 {
+  margin-bottom: 1.75em;
+}
+.p-l-5 {
+  margin-bottom: 2em;
+}
+
+/* FLEX
+--------------------------*/
+
+
+/* BACKGROUNDS
+--------------------------*/
+
+.black {
+  background-color: #000;
+}
+.white {
+  background-color: #fff;
 }
 
 
 /* LAYOUT
--------*/
+-------------------------------------------------------------------------------------------------*/
 
 
-/* MEDIA QUERIES
--------*/
-
-/*header is the same for all html pages */
+/*HEADER*/
+.header {
+  position: fixed;
+  width: 100%;
+}
+.header-2 {
+  top: 0;
+}
+nav {
+  background-color: #fff;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 1px 5px #bdbdbd;
+  
+}
+.logo {
+  padding-top: 10px;
+}
+.logo a{
+  color: #ffa000;
+  font-size: 2em;
+  padding: 20px 10px;
+  font-weight: 500;
+  
+}
+nav ul {
+  float: right;
+  margin-right: 2em;
+  margin-top: -10px;
+}
+nav ul li {
+  display: inline-block;
+  /*line-height: 1;*/
+  margin: -5px 5px;
+  
+}
+nav ul li a {
+ /* font-size: 1em;*/
+  text-transform: uppercase;
+  padding: 0 30px;
+  margin: 20px 0
+}
+.checkbtn {
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  display: none;
+}
+#check {
+  display: none;
+}
+/*
 header {
-  background-color: white;
   box-shadow: 0 1px 5px #bdbdbd;
   top: 0;
   width: 100%;
@@ -126,7 +345,6 @@ header {
 
 header h2 a{
   float: left;
-  padding: 20px;
   color: #ffa000;
   margin-left: 70px;
 }
@@ -145,11 +363,12 @@ header ul li a {
   padding: 20px;
   margin-right: 100px;
 }
-
+*/
 /*main for index.html*/
 
 .indexmain{
-  background-image: url('https://themes.gohugo.io//theme/hugo-terrassa-theme/images/undraw_freelancer_b0my.svg');
+  background-image: url('https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1933&q=80');
+  background-position: center; 
   width: 100%;
   height: 500px;
   padding-top: 300px;
@@ -157,7 +376,8 @@ header ul li a {
   background-size: cover;
 }
 .maintext {
-  margin-left: 80px;
+  margin-left: 600px;
+  color: white;
 }
 .indexmain h1 {
   font-size: 60px;
@@ -181,7 +401,7 @@ header ul li a {
   text-align: center;
 }
 h3 {
-  font-size: 30px;
+  font-size: 2em;
 }
 
 
@@ -193,7 +413,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 90px;
 }
 .about-main h1 {
   font-size: 30px;
@@ -206,7 +426,8 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   text-align: start;
-  margin-top: 80px;
+  margin-top: 90px;
+
 }
 .post-main h1{
   font-size: 25px;
@@ -217,6 +438,7 @@ h3 {
 .post-code {
    background-color: black;
    color: blanchedalmond;
+   
 }
 
 .main-contact {
@@ -228,15 +450,40 @@ h3 {
 
 }
 
+.post-article-1 {
+  height: 500px;
+}
+
+.page-item{
+    align-items: center;
+    
+    
+}
+.page-item li {
+  float: left;
+  margin: 10px;
+}
+
+.page-item li a {
+  
+  margin: 10px;
+}
+.page-item li a:active {
+  background-color: orangered;
+  
+}
+
+
 /*footer is the same in all pages*/
 footer {
   width: 100%;
   text-align: center;
 }
 
-footer a i {
-  padding: 15px;
+footer a  {
+  padding: 35px;
   color: black;
+  margin: 5px;
 }
 
 .footer-contact {
@@ -247,9 +494,138 @@ footer a i {
   
 }
 .footer-contact a {
-  color: white;
-  padding: 10px;
+  color: black;
+  padding: 25px;
+  
 }
 .footer-contact small {
-  margin-left: 700px;
+  margin-left: 600px;
 }
+
+
+
+/*
+Une page sur le responsive css
+https://www.w3schools.com/whatis/whatis_responsive.asp
+*/
+
+/* MEDIA QUERIES
+--------------------------------------------------------------------------------------------------*/
+
+/*FOR IPOD 1024px APPROCH
+* @media (min-width: 1024px)
+*/
+@media (max-width: 1024px) {
+  .logo {
+    padding: 15px 5px;
+  }
+  nav ul {
+    margin-top: -40px;
+  }
+  nav ul li {
+    font-size: 16px;
+  }
+  nav ul li a {
+     padding: 0 10px;
+     margin: 10px 0;
+     font-size: 14px;
+     
+   }
+ .footer-contact a {
+   display: block;
+   padding: 3px;
+ }
+ .contact-name {
+   color: white;
+ }
+ .footer-contact {
+   padding: 10px;
+ }
+ body {
+   font-size: 1em;
+   
+ }
+ 
+   
+}
+
+/*FOR IPAD 768px APPROCH
+* @media (min-width: 768px)
+*/
+@media (max-width: 768px) {
+  .logo {
+    font-size: 14px;
+  }
+  .checkbtn{
+    display: block;
+    
+  }
+  ul {
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    top: 80px;
+    text-align: left;
+    right: -100%;
+    transition: all .5s;
+    
+  
+  }
+  nav ul li {
+    display: block;
+    margin: 30px 0;
+    line-height: 20px;
+    
+  }
+
+  #check:checked ~ ul {
+    right: 0;
+    margin-top: 0px;
+    margin-right: 0;
+  }
+
+  .footer-contact small {
+    margin-left: 500px;
+    padding: 10px;
+  }
+  .mainindex {
+    background-size: cover;
+  }
+ .about-header ul li a {
+    padding: 5px;
+    margin: 12px;
+  }
+  .about-img {
+    width: 100%;
+  }
+}
+label {
+  display: block;
+  cursor: pointer;
+}
+
+
+/* FOR "PHONES"
+ * @media (min-width: 576px)
+--------------------------------------------*/
+@media (max-width: 576px) {
+ 
+  .footer-contact small {
+    margin-left: 300px;
+    padding: 10px;
+  }
+  .mainindex {
+    background-size: cover;
+  }
+ 
+  .footer-contact a {
+    padding: 5px;
+  }
+  .post-main .post-code {
+    width: 100%;
+    font-size: 14px;
+    
+  }
+}
+
