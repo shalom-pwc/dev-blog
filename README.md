@@ -11,7 +11,7 @@ It contains three pages with the same header and footer.The header is fixed and 
 2. **Post page**/*_post-template.html*
     - This page contains navigation bar,title,short describtion,a step by step process with code examples and footer.
 3. **About page**/*about.html*
-    - The About page contains navigation bar with my CV,title,my profile,short describtion and footer.
+    - The About page contains navigation bar with my CV,title,my profile,short describtion, aside and footer.
 
 ## Some things that will be added in the future
 
