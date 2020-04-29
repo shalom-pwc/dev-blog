@@ -51,30 +51,37 @@
 
      <section class="post-content">
       <article class="post-item">
-        <h2>Intro to JAVA SCRIPT</h2>
+        <h2>JS ARRAYS</h2>
         <small>April 28, 2020. 3 min read . 8 min . 8 comments</small>
-        <p>This article offers a sample of basic JS syntax that i have learned inclass. JS is a programming language and its C based language. Programming is a set of instraction that gives to a computer to perform specific task. We need a browser to run JS.</p>
+        <p>Array is a list of data.Array can be anything like number, string or nested arrary.</p>
         <p>Example </p>
          
          <pre>
            <code class="language-js">
-            // This is single line comments 
-            // VARIABLES we need to have a container to store the data that we call variables in JS.
-            let num = 32;
-            let str = "selam";
-            let float = 2.1;
-            let boolean = true;
-            let remainder = 10 % 5;
+            let sport = ['football', 'handball', 'basketball'] // place to store data in array
+            console.log(sport); // display
 
-            // ARRAYS
-            let name = [selam, eva, dani];
+           // ADD TO sport
+              sport.push('vollyball');
+           
+          // CHANGE IN sport
+            sport[1] = 'athletics';
 
-            // FUNCTIONS
-            function minTosec(min) {
-              let sec = min * 60;
-              return sec;
-            }
-            console.log(minTosec(40));
+          
+          // delete from sport
+          sport.splice(0,1);
+
+
+          // DELETE FROM LAST  sport
+          sport.pop();
+
+          
+          // DELETE FROM FIRST  sport
+          sport.shift();
+
+          // ADD IN FIRST  sport
+          sport.unshift('boxing');
+           
           
            </code>
          </pre>
