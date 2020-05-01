@@ -279,7 +279,7 @@ header .highlight, header .current a {
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
-  margin-top: 15px;
+  padding-top: 130px;
   
 }
 
@@ -322,6 +322,7 @@ header .highlight, header .current a {
 }
 
 /* SIDEBAR */
+
 aside#sidebar {
   float: right;
   width: 30%;

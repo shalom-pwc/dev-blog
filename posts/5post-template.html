@@ -36,7 +36,7 @@
     
     <main>
      
-      <section id="newsletter">
+      <!-- <section id="newsletter">
         <div id="container" class="row news">
           <h3 class="col-2">Subscribe To My Blog Post</h3>
           <form action="" class="col-2">
@@ -44,7 +44,7 @@
             <button type="submit" class="button_1">Subscribe</button>
           </form>
         </div>
-      </section>
+      </section> -->
     </main>
 
      <!-- BLOG CONTENT-->
@@ -54,45 +54,63 @@
         <h2>JS FUNCTIONS</h2>
         <small>April 28, 2020. 3 min read . 8 min . 8 comments</small>
         <p>A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" calls it.</p>
-        <p class="m0"><a  href="5post-template.html">Read more...</a></p>
-      </article>
+        <p>Example </p>
+         
+         <pre>
+           <code class="language-js">
+            //FUNCTIONS
+            let fruits = ['banana', 'orange', 'lemon', 'apple']; // place to store data in array
+           
+            // display fruits
+            function displayFruits(){
+              
+              console.log(fruits); 
+             }
+             displayFruits();
 
-      <article class="post-item">
-        <h2>JS ARRAYS</h2>
-        <small>April 28, 2020. 3 min read . 8 min . 8 comments</small>
-        <p>This article offers a sample of basic JS syntax that i have learned inclass.Array is a list of data.Array can be anything like number, string or nested arrary.</p>
-        <p class="m0"><a  href="4post-template.html">Read more...</a></p>
-      </article>
+           // ADD TO fruits
+           function addFruite(txt){
+            fruits.push(txt);
+            displayFruits();
+           }
+           addFruite('watermelon');
+           
+           // CHANGE IN fruits
+            function changeFruite(index,txt){
+            fruits[index]= txt;
+            displayFruits();
+           }
+           changeFruite(1,'strawbarry');
 
-      <article class="post-item">
-        <h2>Intro to JAVASCRIPT</h2>
-        <small>April 28, 2020. 3 min read . 8 min . 8 comments</small>
-        <p> JS is a programming language and its C based language. Programming is a set of instraction that gives to a computer to perform specific task. We need a browser to run JS.</p>
-        <p class="m0"><a  href="3post-template.html">Read more...</a></p>
-      </article>
+          
+          // delete from fruits
+          function deleteFruite(index,num){
+            fruits.splice(index,1);
+            displayFruits();
+           }
+           deleteFruite(3,1);
 
-       <article class="post-item">
-        <h2>CSS3</h2>
-        <small>April 8, 2020. 3 min read . 8 min . 8 comments</small>
-        <p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
-        <p class="m0"><a  href="">Read more...</a></p>
-      </article>
+           //remainder
+           function remainder(num1,num2){
+
+            let num3 = num1 % num2;
+            return num3;
+            }
+            remainder(1,3);
+           //result 1
 
 
-      <article class="post-item">
-        <h2>HTML5</h2>
-        <small>April 8, 2020. 3 min read . 8 min . 8 comments</small>
-        <p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
-        <p class="m0"><a  href="">Read more...</a></p>
-      </article>
-
-     
-
-      <article class="post-item">
-        <h2>Markdown Syntax Guide</h2>
-        <small>April 8, 2020. 3 min read . 8 min . 8 comments</small>
-        <p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
-        <p class="m0"><a  href="">Read more...</a></p>
+          //reverse using sort methode
+          function sortNum(){
+            let num = [2,5,4,1,3]
+            rev=num.sort();
+            return rev;
+         
+         }
+         console.log(sortNum());
+          
+           </code>
+         </pre>
       </article>
      </section>
 
