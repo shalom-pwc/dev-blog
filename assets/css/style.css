@@ -18,6 +18,9 @@ html{
 html{
   font-size: 15px;
   scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -59,21 +62,7 @@ button {
   justify-content: space-around;
 }
 
-.col {
-  display: flex;
-  align-content: center;
-}
-.col-1 {
-  width: 30%;
-}
 
-.col-2 {
-  width: 50%;
-}
-
-.col-3 {
-  width: 60%;
-}
 
 /* BACKGROUNDS
 --------------------------*/
@@ -86,6 +75,7 @@ button {
   width: 80%;
   margin: auto;
   overflow: hidden;
+  
 }
 
 .button_1 {
@@ -159,6 +149,7 @@ header {
   border-bottom: #e8491d 3px solid;
   position: fixed; 
   width: 100%;
+  right: 0;
 }
 
 header h1 {
@@ -175,12 +166,11 @@ header a {
 }
 nav ul {
   float: right;
-  margin-right: 20px;
+ /*  margin-right: 20px; */
 }
 header li {
   padding: 0 20px 0 20px;
   line-height: 80px;  
-  margin: 0 5px;
   display: inline-block;
 }
 
@@ -189,7 +179,7 @@ header li {
   color: #ffffff;
   float: right; 
   line-height: 80px;
-  margin-right: 40px;
+ /*  margin-right: 2em; */
   display: none; 
 }
 #check {
@@ -212,17 +202,19 @@ header .highlight, header .current a {
   text-align: center;
   color: #ffffff;
   padding-top: 100px;
+  max-width: 100%;
+  
 }
 
 
 #showcase h2 {
   margin-top: 100px;
-  font-size: 55px;
+  font-size: 3.75em;
   margin-bottom: 10px;
 }
 
 #showcase p {
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 
@@ -234,16 +226,14 @@ header .highlight, header .current a {
   background-color: #35424a;
 }
 
-#container h3 {
-  font-size: 22.5px;
-  font-weight: bold;
-  margin-left: 8em;
-}
+ #container button {
+  margin-left: .46em; 
+} 
 
 #newsletter input[type="email"] {
   padding: 4px;
   height: 25px;
-  width: 250px;
+  width: 16.7em;
 }
 
 
@@ -251,10 +241,11 @@ header .highlight, header .current a {
 
 #boxes {
   margin-top: 20px;
+  margin-right: 0;
 }
 #boxes .box {
-  width: 30%;
-  padding: 10px;
+  width: 100%;
+  padding: 1em;
   text-align: center;
 }
 
@@ -279,7 +270,7 @@ header .highlight, header .current a {
   margin-left: auto;
   margin-right: auto;
   background-color: #ffffff;
-  padding-top: 130px;
+  padding-top: 2em;
   
 }
 
@@ -291,12 +282,12 @@ header .highlight, header .current a {
   padding: 1em;
 }
 .post-item h2 {
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: bold;
 }
 .post-item small {
-  font-size: 12px;
-  font-weight: 300;
+  font-size: .8em;
+  opacity: 0.7;
 }
 .post-item p {
   margin-bottom: 1em;
@@ -308,42 +299,41 @@ header .highlight, header .current a {
 
 /* ABOUT */
 
-#main-col h2 {
+ #about h2 {
    font-size: 1.5em;
    font-weight: bold;
-}
-
-#main-col img {
-  
-}
-
+} 
 .news {
-  padding-top: 130px;
+  padding-top: 8em;
 }
-
+.blog {
+  padding-top: 8em;
+}
 /* SIDEBAR */
 
-aside#sidebar {
+/* aside#sidebar {
   float: right;
   width: 30%;
   margin-top: 10px;
   
+} */
+article, aside {
+  padding: 2em 3%;
 }
-
-#sidebar h4 {
+ #sidebar h4 {
   margin: 17px 0;
   font-weight: bold;
 }
-
+/*
 #sidebar p {
   margin: 15px 0;
-}
+} */
 
 /* main-col */
-article#main-col {
+/* article#main-col {
   float: left;
   width: 65%;
-}
+} */
 /* FOOTER */
 
 footer {
@@ -354,16 +344,15 @@ footer {
 }
 
 .social-media-icons i {
-  margin-left: 2em;
-  width: 120%;
-  padding-bottom: 3rem;
+  margin-left: 2em; 
+  font-size: 1.3em;
+
 }
 
 .footer-text {
   text-align: center;  
 } 
 .footer-text p {
-  font-size: 14px;
   margin-top: 1em;
 }
 
@@ -378,8 +367,11 @@ footer {
 */
 
 @media (max-width: 1024px){
+  header {
+    padding-top: 1.5em;
+  }
   .logo {
-    font-size: 40px;
+    font-size: 1.8em;
   }
  
   .checkbtn {
@@ -391,7 +383,7 @@ footer {
     width: 100%;
     height: 100vh;
     background-color: #35424a;
-    top: 112px;
+    top: 105px;
     left: -100%;
     text-align: center;
     transition: all .5s;
@@ -399,10 +391,10 @@ footer {
   nav ul li {
     display: block;
     margin: 90px 0;
-    line-height: 30px;
+    line-height: 2;
   }
   nav ul li a {
-    font-size: 30px;
+    font-size: 2em;
   }
   
   #check:checked ~ ul {
@@ -410,6 +402,16 @@ footer {
     left: 0;
     
   }
+  #showcase p {
+    font-size: 1.5em;
+  }
+  article {
+    flex: 3;
+  }
+  aside {
+    flex: 1;
+  }
+  
 }
 
 
@@ -417,26 +419,136 @@ footer {
 */
 
 @media (max-width: 768px){
+  
   header {
-    padding-bottom: 20px;
+    padding-top: 1.25em;
+    right: 0;
   }
+  /* .post-content {
+    margin-top: 50px;
+    
+  } */
   ul {
-    top: 132px;
+    top: 100px;
   }
   nav ul li {
-    margin: 60px 0;
+   padding-right: 0;
   }
 
- .row {
+   #newsletter input[type="email"] {
+    align-items: center;
+    width: 100%;
+  } 
+  .row {
     flex-direction: column;
     align-items: center;
-    
-  } 
+    flex-wrap: wrap; 
+  }
+  /* #newsletter h3 {
+    margin-left: 2em;
+    font-size: 1.7em;
+  }  */
+ 
+ /*  #newsletter form {
+    width:100%;
+    margin-bottom:5px;
+  }  */
   .box {
     width: 100%;
   }
-  #newsletter {
+  #boxes .box h3 {
+    font-size: 1.5em;
+  }
+  #boxes .box p {
+    font-size: 1.5em;
+  
+  }
+  .social-media-icons i {
+    font-size: 1.5em;
+  }
+  .post-item p {
+   font-size: 1.2em;
+  }
+  .footer-text p {
+    font-size: 1.3em;
+  }
+  article, aside {
+    padding: 4em 10%;
+  }
+}
+
+/* @media (max-width: 414px)
+*/
+
+@media (max-width: 768px){
+  
+  header {
+    padding-top: .5em;
+    right: 0;
+  }
+  .logo {
+    font-size: 1.6em;
+  }
+  ul {
+    top: 90px;
+  }
+ 
+  nav ul li a {
+    font-size: 1.35em;
+  }
+  nav ul li {
+    margin: 50px 0;
+    line-height: .9;
+  }
+  #showcase h2 {
+    font-size: 2.5em;
+  }
+  #showcase p {
+    font-size: 1em;
+  }
+
+  /* #newsletter {
     align-items: center;
+    font-size: .7em;
+  } */
+  /* #newsletter form input[type="email"] {
+    width:100%;
+    margin-bottom: 7px;
+  } 
+   */
+ .row {
+    flex-direction: column;
+    align-items: center; 
+  }
+  .button_1 {
     width: 100%;
+  }
+  input {
+    width: 100%;
+  }
+  #newsletter h3 {
+    margin-left: 2em;
+  } 
+  #boxes .box h3 {
+    font-size: 1.7em;
+  }
+  #boxes .box p {
+    font-size: 1em;
+  
+  }
+  .social-media-icons i {
+    font-size: 1.3em;
+  }
+  .post-item p {
+   font-size: 1.3em;
+  }
+  .footer-text p {
+    font-size: 1em;
+  }
+  footer {
+    padding: 0.7em 0;
+  }
+  article, aside {
+    padding: 3em 5%;
   }
 }

@@ -18,12 +18,31 @@
   <link rel="stylesheet" href="../assets/icons/style.css">
   
   <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
   <!--HEADER-->
-    <header>
-      <div class="container row">
-        <h1 id="branding" class="logo"><span class="highlight">Selam's</span> Dev Blog</h1> 
+  <header>
+    <div class="container">        
+      <h1 class="logo"><span class="highlight">Selam's</span> Dev Blog</h1>        
+      <div>
+        <nav>  
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="current"><a href="../posts/post-template.html">Post</a></li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+   <!--  <header>
+      <div class="container">
+        <h1 class="logo"><span class="highlight">Selam's</span> Dev Blog</h1> 
         <nav class="col-1">
           <ul class="row">
             <li><a href="../index.html">Home</a></li>
@@ -32,14 +51,14 @@
           </ul>
         </nav>
       </div>
-    </header>
+    </header> -->
     
     <main>
      
       <section id="newsletter">
         <div id="container" class="row news">
-          <h3 class="col-2">Subscribe To My Blog Post</h3>
-          <form action="" class="col-2">
+          <h3>Subscribe To My Blog Post</h3>
+          <form action="">
             <input type="email" placeholder="Enter Email...">
             <button type="submit" class="button_1">Subscribe</button>
           </form>
@@ -50,6 +69,21 @@
      <!-- BLOG CONTENT-->
 
      <section class="post-content">
+      <article class="post-item">
+        <h2>JS Booleans</h2>
+        <small>may 01, 2020. 3 min read . 8 min . 8 comments</small>
+        <p>A JavaScript Boolean represents one of two values: true or false. </p>
+        <p class="m0"><a  href="7post-template.html">Read more...</a></p>
+      </article>
+
+
+      <article class="post-item">
+        <h2>JS OBJECTS</h2>
+        <small>may 01, 2020. 3 min read . 8 min . 8 comments</small>
+        <p>Objects is the same as an array. An array can store only values but in object you can store key and value. </p>
+        <p class="m0"><a  href="6post-template.html">Read more...</a></p>
+      </article>
+
       <article class="post-item">
         <h2>JS FUNCTIONS</h2>
         <small>April 28, 2020. 3 min read . 8 min . 8 comments</small>

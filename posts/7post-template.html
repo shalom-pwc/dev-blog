@@ -49,34 +49,87 @@
 
      <section class="post-content">
       <article class="post-item blog">
-        <h2>ObjectS JAVA SCRIPT</h2>
+        <h2>Booleans JAVA SCRIPT</h2>
         <small>may 01, 2020. 3 min read . 8 min . 8 comments</small>
-        <p>Objects is the same as an array. An array can store only values but in object you can store key and value. </p>
+        <p>A JavaScript Boolean represents one of two values: true or false.</p>
         <p>Example </p>
          
          <pre>
            <code class="language-js">
-            // Array = [Paris,France,Eruope]
-            // Object = { 
-              city: Paris,
-              country: France,
-              continent: Eruope
-            }
+                              
+                  //booleans
 
-            //Extract City Facts
-            let cityFacts = {
+                  let shopping = [
+                    {
+                      text: "banana",
+                      kg: "1kg",
+                      completed: true
+                    },
+                    {
+                      text: "tomato",
+                      kg: "2kg",
+                      completed: false
+                    },
+                    {
+                      text: "orange",
+                      kg: "1kg",
+                      completed: true
+                    }
+                  ]
 
-              name:"Asmara",
-              population:1000000,
-              continent:"Africa",
-          
-              displayCityFacts: function(){
-                console.log(this.name + ' has a population of ' + this.population + ' and is situated in ' + this.continent);
-              }
-           }
-           
-          
-          cityFacts.displayCityFacts();
+                  console.log(shopping);
+
+                  shopping.push({
+                    text: "onion",
+                    kg: "1kg",
+                    completed: false
+                  });
+                  //Add shopping
+                  function addShopping(tobuy){
+                    shopping.push(tobuy);
+                  }
+                  addShopping(shopping.push({
+                    text: "pasta",
+                    kg: "5kg",
+                    completed: true
+                  })
+                  );
+
+                  //change shopping
+                  function changeShopping(index,text){
+                    shopping[index]=text;
+                  }
+                  changeShopping([0],{
+                    text: "mango",
+                    kg: "1/2kg",
+                    completed: true
+                  })
+
+
+                  //Delete shopping
+                  function deleteShopping(index,howManyItems){
+                    shopping.splice(index,howManyItems);
+                  }
+                  deleteShopping(2,1);
+
+
+                  //refactoring
+                  function newShopping(newText,newOption,newCompleted=false){
+                    shopping.push(
+                      {text: newText,
+                      kg: newOption,
+                      completed: newCompleted
+                    })
+                  }
+                  newShopping("Shirt","S");
+
+                  //Change key value
+
+                  function changeKeyValue(index,key,value){
+                    shopping[index][key]= value;
+                  console.log(shopping);
+                  }
+                  changeKeyValue(1,"text","salade");
            </code>
          </pre>
       </article>
