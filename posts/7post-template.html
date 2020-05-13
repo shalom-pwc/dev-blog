@@ -50,9 +50,33 @@
      <section class="post-content">
       <article class="post-item blog">
         <h2>Booleans JAVA SCRIPT</h2>
-        <small>may 01, 2020. 3 min read . 8 min . 8 comments</small>
-        <p>A JavaScript Boolean represents one of two values: true or false.</p>
-        <p>Example </p>
+        <small>may 05, 2020. 3 min read . 8 min . 8 comments</small>
+        <p>Boolean is a primitive data type in JavaScript. Boolean can have only two values, true or false. It is useful in controlling program flow using conditional statements like if..else, switch, while, do..while.</p>
+        
+        <p>Here are examples of coercing expressions to booleans in JavaScript: </p>
+
+        
+        <pre>
+          <code class="language-js">
+            true ? console.log(true) : console.log(false) // true
+            false ? console.log(true) : console.log(false) // false
+
+            // Empty objects evaluate to true but empty strings evaluate to false
+            const emptyObject = {}
+            emptyObject ? console.log(true) : console.log(false) // true
+            const emptyString = ""
+            emptyString ? console.log(true) : console.log(false) // false
+
+            // The Boolean wrapper takes an expression and returns true or false
+            Boolean({}) ? console.log(true) : console.log(false) // true
+            Boolean("") ? console.log(true) : console.log(false) // false
+
+            // Numbers evaluate to true, except 0 or -0
+            Boolean(37) ? console.log(Boolean(37)) : console.log(Boolean(-0)) // true
+            Boolean(-0) ? console.log(Boolean(37)) : console.log(Boolean(-0)) // false
+
+          </code>
+        </pre>
          
          <pre>
            <code class="language-js">

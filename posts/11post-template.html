@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post</title>
+  <link rel="stylesheet" href="../assets/plugins/prism/prism.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicons/favicons/site.webmanifest">
+  <link rel="mask-icon" href="../assets/favicons/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="../assets/favicons/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="../assets/favicons/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/icons/style.css">
+  
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <!--HEADER-->
+  <header>
+    <div class="container">        
+      <h1 class="logo"><span class="highlight">Selam's</span> Dev Blog</h1>        
+      <div>
+        <nav>  
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="current"><a href="../posts/post-template.html">Post</a></li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+
+     <!-- BLOG CONTENT-->
+
+     <section class="post-content">
+      <article class="post-item blog">
+        <h2>JS HTML DOM</h2>
+        <small>may 13, 2020. 2 min read . 5 min . 3 comments</small>
+       
+        <p><span class="bold"> Your Age In Days. </span></p>
+         <h2>HTML</h2>
+         
+         <pre>
+           <code class="language-html">
+            <div class="container-1">
+              <h2>Challenge 1: Your Age in days</h2>
+              <div class="flex-box-container-1">
+                  <div>
+                    <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+                  </div>
+             
+                  <div>
+                    <button class="btn btn-danger" onclick="reset()">reset</button>
+                  </div>
+                </div>
+                <div class="flex-box-container-1">
+                  <div id="flex-box-result"></div>
+          
+              </div>
+           </div>
+           </code>
+         </pre>
+
+         
+         <h2>CSS</h2>
+         
+         <pre>
+           <code class="language-css">
+             //Challenge 1: Your Age in days
+
+            .container-1 {
+              border: 1px solid black;
+              width: 75%;
+              margin: 0 auto;
+              text-align: center;
+            }
+            
+            
+            
+            .flex-box-container-1 {
+              display: flex;
+              border: 1px solid black;
+              padding: 10px ;
+              flex-wrap: wrap;
+              flex-direction: row;
+              justify-content: space-around;
+            }
+            
+            .flex-box-container-1 div {
+              display: flex;
+              padding: 10px;
+              border: 1px solid black;
+              align-items: center;
+            }
+            
+            section { 
+            
+              display: block;
+              width: 200px;
+              margin: 50px auto;
+              border: 3px solid red;
+            
+            }
+           </code>
+         </pre>
+
+         
+         <h2>JS</h2>
+        
+         <pre>
+          <code class="language-js">
+            //Challenge 1: Your Age in Days
+
+            function ageInDays(){
+              let birthYear = prompt('what year were you born...?')
+              let date = new Date();
+              let currentYear = date.getFullYear();
+              let ageInDays = (currentYear - birthYear) * 365;
+              console.log(ageInDays);
+              let h1 = document.createElement('h1');
+              let textAnswer = document.createTextNode('You are ' + ageInDays + ' days')
+              h1.setAttribute('id', 'ageInDays');
+              h1.appendChild(textAnswer);
+              document.getElementById('flex-box-result').appendChild(h1);
+              
+            }
+            
+            function reset() {
+              document.getElementById('ageInDays').remove();
+            }
+            
+
+          </code>
+        </pre>
+
+       
+      </article>
+     </section>
+
+
+     <footer>
+      <div class="footer-text">
+       <div class="social-media-icons">
+         <i class="icon-facebook"></i>
+         <i class="icon-twitter"></i>
+         <i class="icon-instagram"></i>
+         <i class="icon-github"></i>
+         <i class="icon-linkedin"></i>
+       </div>
+       <p>Selam Dev Blog, Copyright &copy; 2020</p>
+      </div>
+     </footer>
+
+     <script src="../assets/plugins/prism/prism.js"></script>
+</body>
+</html>

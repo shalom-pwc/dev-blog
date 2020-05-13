@@ -45,40 +45,60 @@
 
      <section class="post-content">
       <article class="post-item blog">
-        <h2>JS ARRAYS</h2>
-        <small>April 28, 2020. 3 min read . 8 min . 8 comments</small>
-        <p>An array can hold many values under a single name, and you can access the values by referring to an index number. </p>
+        <h2>JS LOOPS</h2>
+        <small>may 10, 2020. 3 min read . 8 min . 8 comments</small>
+        <p>Looping statements in JavaScript execute an instruction (code) repeatedly until a particular defined condition is met. </p>
+        <ol>
+          <li> <span class="bold">Initialization:</span> The initialization expression initializes the loop.</li>
+          <li><span class="bold">
+            condition:</span> The condition is an expression that is evaluated once before every iteration. </li>
+          <li><span class="bold">
+            Post-expression:</span> The for loop statement also evaluates the post-expression after each loop iteration. </li>
+        </ol>
+        <figure>
+          <img class="loop" src="https://cdn.javascripttutorial.net/wp-content/uploads/2020/01/JavaScript-for-Loop.png" alt="">
+        </figure>
+        <h2>for loop</h2>
         <p>Example </p>
          
          <pre>
            <code class="language-js">
-            let sport = ['football', 'handball', 'basketball'] // place to store data in array
-            console.log(sport); // display
-
-           // ADD TO sport
-              sport.push('vollyball');
-           
-          // CHANGE IN sport
-            sport[1] = 'athletics';
-
+           //Example 1
+            for (let counter = 1; counter < 5; counter++) {
+              console.log('Inside the loop:' + counter);
+           }
+          console.log('Outside the loop:' + counter);
           
-          // delete from sport
-          sport.splice(0,1);
+          //Example 2
 
-
-          // DELETE FROM LAST  sport
-          sport.pop();
-
-          
-          // DELETE FROM FIRST  sport
-          sport.shift();
-
-          // ADD IN FIRST  sport
-          sport.unshift('boxing');
-           
-          
+          const arr = ['cat', 'dog', 'fish'];
+            for (i = 0; i < arr.length; i++) { 
+              console.log(arr[i])
+            }
+            // cat
+            // dog
+            // fish
+      
            </code>
          </pre>
+
+         <h2>forEach loop</h2>
+         <p>forEach is an Array method that we can use to execute a function on each element in an array. It can only be used on Arrays, Maps, and Sets.</p>
+         <p>Example </p>
+          
+          <pre>
+            <code class="language-js">
+            
+              const arr = ['cat', 'dog', 'fish'];
+              arr.forEach(function (element) {
+                console.log(element);
+              });
+              // cat
+              // dog
+              // fish
+           
+            </code>
+          </pre>
       </article>
      </section>
 
@@ -95,6 +115,7 @@
        <p>Selam Dev Blog, Copyright &copy; 2020</p>
       </div>
      </footer>
+
 
      <script src="../assets/plugins/prism/prism.js"></script>
 </body>

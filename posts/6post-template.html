@@ -51,11 +51,25 @@
       <article class="post-item blog">
         <h2>ObjectS JAVA SCRIPT</h2>
         <small>may 01, 2020. 3 min read . 8 min . 8 comments</small>
-        <p>Objects is the same as an array. An array can store only values but in object you can store key and value. </p>
+        <p>An object can be created with figure brackets {…} with an optional list of properties. A property is a “key: value” pair, where key is a string (also called a “property name”), and value can be anything. </p>
         <p>Example </p>
+
+        <pre>
+          <code class="language-js">
+            let user = {     // an object
+              name: "John",  // by key "name" store value "John"
+              age: 30        // by key "age" store value 30
+            };
+            // get property values of the object:
+            alert( user.name ); // John
+            alert( user.age ); // 30
+          </code>
+        </pre>
          
          <pre>
            <code class="language-js">
+
+             //Extract City Facts
             // Array = [Paris,France,Eruope]
             // Object = { 
               city: Paris,
@@ -63,7 +77,6 @@
               continent: Eruope
             }
 
-            //Extract City Facts
             let cityFacts = {
 
               name:"Asmara",
@@ -75,7 +88,6 @@
               }
            }
            
-          
           cityFacts.displayCityFacts();
            </code>
          </pre>

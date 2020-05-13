@@ -55,6 +55,12 @@ button {
   border: none;
 }
 
+ol {
+  list-style: upper-roman;
+  padding: .5em;
+  margin-left: 2em;
+}
+
 /* FLEX
 --------------------------*/
 .row {
@@ -80,7 +86,7 @@ button {
 
 .button_1 {
   height: 38px;
-  background: #e8491d;
+  background:  #e8491d;
   padding-left: 20px;
   padding-right: 20px;
   color: #ffffff;
@@ -107,6 +113,17 @@ button {
   margin: 0;
 }
 
+/* loop img */
+.loop {
+  width: 40%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.upper {
+  text-transform: uppercase;
+}
 
 /* FONT SIZE */
 .f-s-1 {
@@ -137,6 +154,7 @@ button {
 }
 
 
+
 /* LAYOUT
 -------------------------------------------------------------------------------------------------*/
 
@@ -149,7 +167,8 @@ header {
   border-bottom: #e8491d 3px solid;
   position: fixed; 
   width: 100%;
-  right: 0;
+  z-index: 1;
+
 }
 
 header h1 {
@@ -226,9 +245,9 @@ header .highlight, header .current a {
   background-color: #35424a;
 }
 
- #container button {
-  margin-left: .46em; 
-} 
+#newsletter h3 {
+  font-size: 1.5em;
+}
 
 #newsletter input[type="email"] {
   padding: 4px;
@@ -275,10 +294,6 @@ header .highlight, header .current a {
 }
 
 .post-item {
-  margin-bottom: 2rem;
-}
-
-.post-item {
   padding: 1em;
 }
 .post-item h2 {
@@ -287,7 +302,7 @@ header .highlight, header .current a {
 }
 .post-item small {
   font-size: .8em;
-  opacity: 0.7;
+  color: #cccccc;
 }
 .post-item p {
   margin-bottom: 1em;
@@ -295,7 +310,9 @@ header .highlight, header .current a {
 .post-item a {
   color: #e8491d;
 }
-
+.blog {
+  padding-top: 6em;
+}
 
 /* ABOUT */
 
@@ -306,17 +323,17 @@ header .highlight, header .current a {
 .news {
   padding-top: 8em;
 }
-.blog {
-  padding-top: 8em;
-}
+
+
 /* SIDEBAR */
 
-/* aside#sidebar {
-  float: right;
-  width: 30%;
-  margin-top: 10px;
-  
-} */
+#sidebar {
+  height: 400px;
+  margin-top: 4.2em;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
 article, aside {
   padding: 2em 3%;
 }
@@ -324,16 +341,7 @@ article, aside {
   margin: 17px 0;
   font-weight: bold;
 }
-/*
-#sidebar p {
-  margin: 15px 0;
-} */
 
-/* main-col */
-/* article#main-col {
-  float: left;
-  width: 65%;
-} */
 /* FOOTER */
 
 footer {
@@ -345,8 +353,12 @@ footer {
 
 .social-media-icons i {
   margin-left: 2em; 
-  font-size: 1.3em;
+  font-size: 1.2em; 
+  padding: 8px;
+}
 
+.social-media-icons :hover {
+   color: #e8491d; 
 }
 
 .footer-text {
@@ -390,11 +402,11 @@ footer {
   }
   nav ul li {
     display: block;
-    margin: 90px 0;
+    margin: 5em 0;
     line-height: 2;
   }
   nav ul li a {
-    font-size: 2em;
+    font-size: 1.7em;
   }
   
   #check:checked ~ ul {
@@ -403,8 +415,11 @@ footer {
     
   }
   #showcase p {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
+  .post-item p {
+    font-size: 1.2em;
+   }
   article {
     flex: 3;
   }
@@ -444,33 +459,39 @@ footer {
     align-items: center;
     flex-wrap: wrap; 
   }
-  /* #newsletter h3 {
-    margin-left: 2em;
-    font-size: 1.7em;
-  }  */
+  
  
- /*  #newsletter form {
+ #newsletter form {
     width:100%;
     margin-bottom:5px;
-  }  */
+  } 
+  .button_1 {
+    width:100%;
+    font-size: 1.3em;
+  } 
   .box {
     width: 100%;
   }
   #boxes .box h3 {
     font-size: 1.5em;
   }
-  #boxes .box p {
-    font-size: 1.5em;
+  /* #boxes .box p {
+    font-size: 1em;
   
-  }
+  } */
   .social-media-icons i {
     font-size: 1.5em;
   }
   .post-item p {
    font-size: 1.2em;
   }
+  #sidebar {
+    margin-top: 0;
+    width: 80%;
+    
+  }
   .footer-text p {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
   article, aside {
     padding: 4em 10%;
@@ -480,7 +501,7 @@ footer {
 /* @media (max-width: 414px)
 */
 
-@media (max-width: 768px){
+@media (max-width: 414px){
   
   header {
     padding-top: .5em;
@@ -507,46 +528,31 @@ footer {
     font-size: 1em;
   }
 
-  /* #newsletter {
-    align-items: center;
-    font-size: .7em;
-  } */
-  /* #newsletter form input[type="email"] {
-    width:100%;
-    margin-bottom: 7px;
-  } 
-   */
+
  .row {
     flex-direction: column;
     align-items: center; 
   }
-  .button_1 {
-    width: 100%;
-  }
-  input {
-    width: 100%;
-  }
+  .news {
+  padding-top: 6em;
+}
+  
   #newsletter h3 {
-    margin-left: 2em;
+    margin-left: 1em;
   } 
   #boxes .box h3 {
     font-size: 1.7em;
   }
-  #boxes .box p {
-    font-size: 1em;
   
-  }
   .social-media-icons i {
     font-size: 1.3em;
   }
   .post-item p {
-   font-size: 1.3em;
+   font-size: 1em;
   }
-  .footer-text p {
-    font-size: 1em;
-  }
+  
   footer {
-    padding: 0.7em 0;
+    padding: 0.5em 0;
   }
   article, aside {
     padding: 3em 5%;
