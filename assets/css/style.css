@@ -464,6 +464,9 @@ footer {
   .button_1 {
     width:100%;
     font-size: 1.3em;
+    margin-top: 10px;
+    padding-right: 0;
+    padding-left: 0;
   } 
   .box {
     width: 100%;
