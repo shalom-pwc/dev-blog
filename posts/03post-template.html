@@ -40,34 +40,51 @@
       </div>
     </div>
   </header>
-
+    
      <!-- BLOG CONTENT-->
 
      <section class="post-content">
       <article class="post-item blog">
-        <h2>JS FUNCTIONS</h2>
+        <h2 class="upper">Intro to JavaScript</h2>
         <small>April 28, 2020. 3 min read . 8 min . 8 comments</small>
-        <p>A function is a subprogram designed to perform a particular task. Functions are executed when they are called. This is known as invoking a function.Values can be passed into functions and used within the function.
-        Functions always return a value. In JavaScript, if no return value is specified, the function will return undefined.
-        Functions are objects.</p>
+        <p>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)</p>
         <p>Example </p>
          
          <pre>
            <code class="language-js">
-            //FUNCTIONS
-            
-            function triArea(base, height) {
-              var area = (base*height)/2;
-              return area;
+            // This is single line comments 
+            // VARIABLES we need to have a container to store the data that we call variables in JS.
+            let num = 32;
+            let str = "selam";
+            let float = 2.1;
+            let boolean = true;
+            let remainder = 10 % 5;
+
+            // ARRAYS
+            let name = [selam, eva, dani];
+
+            // FUNCTIONS
+            function minTosec(min) {
+              let sec = min * 60;
+              return sec;
             }
-            triArea(3,2);
-          
+            console.log(minTosec(40));
+
+            //OBJECTS
+              let car = {
+                type:"Fiat",
+                 model:"500", 
+                 color:"white"
+                };
+            
+                //EVENTS
+                &lt;button onclick="document.getElementById('demo').innerHTML = Date()"&gt;The time is?&lt;/button&gt;
            </code>
          </pre>
       </article>
      </section>
 
-
+     <!-- FOOTER -->
      <footer>
       <div class="footer-text">
        <div class="social-media-icons">

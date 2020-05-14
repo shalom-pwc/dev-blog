@@ -40,27 +40,49 @@
       </div>
     </div>
   </header>
-    
+
      <!-- BLOG CONTENT-->
 
      <section class="post-content">
       <article class="post-item blog">
-        <h2>Markdown</h2>
+        <h2>JS ARRAYS</h2>
         <small>April 28, 2020. 3 min read . 8 min . 8 comments</small>
-        <p>This article offers a sample of basic JS syntax that i have learned inclass. JS is a programming language and its C based language. Programming is a set of instraction that gives to a computer to perform specific task. We need a browser to run JS.</p>
+        <p>An array can hold many values under a single name, and you can access the values by referring to an index number.You access an array element by referring to the index number. </p>
         <p>Example </p>
          
          <pre>
-           <code class="language-html">
-              # This is h1 
-             
+           <code class="language-js">
+            let sport = ['football', 'handball', 'basketball'] // place to store data in array
+            console.log(sport); // display
+
+           // ADD TO sport
+              sport.push('vollyball');
+           
+          // CHANGE IN sport
+            sport[1] = 'athletics';
+
+          
+          // delete from sport
+          sport.splice(0,1);
+
+
+          // DELETE FROM LAST  sport
+          sport.pop();
+
+          
+          // DELETE FROM FIRST  sport
+          sport.shift();
+
+          // ADD IN FIRST  sport
+          sport.unshift('boxing');
+           
           
            </code>
          </pre>
       </article>
      </section>
 
-
+      <!-- FOOTER -->
      <footer>
       <div class="footer-text">
        <div class="social-media-icons">

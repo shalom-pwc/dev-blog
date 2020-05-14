@@ -40,61 +40,45 @@
       </div>
     </div>
   </header>
-    
-    <main>
-     
-    </main>
 
      <!-- BLOG CONTENT-->
 
      <section class="post-content">
       <article class="post-item blog">
-        <h2>ObjectS JAVA SCRIPT</h2>
-        <small>may 01, 2020. 3 min read . 8 min . 8 comments</small>
-        <p>An object can be created with figure brackets {…} with an optional list of properties. A property is a “key: value” pair, where key is a string (also called a “property name”), and value can be anything. </p>
+        <h2>JS FUNCTIONS</h2>
+        <small>April 28, 2020. 3 min read . 8 min . 8 comments</small>
+        <p>A function is a subprogram designed to perform a particular task. Functions are executed when they are called. This is known as invoking a function.Values can be passed into functions and used within the function.
+        Functions always return a value. In JavaScript, if no return value is specified, the function will return undefined.
+        Functions are objects.</p>
         <p>Example </p>
-
-        <pre>
-          <code class="language-js">
-            let user = {     // an object
-              name: "John",  // by key "name" store value "John"
-              age: 30        // by key "age" store value 30
-            };
-            // get property values of the object:
-            alert( user.name ); // John
-            alert( user.age ); // 30
-          </code>
-        </pre>
          
          <pre>
            <code class="language-js">
-
-             //Extract City Facts
-            // Array = [Paris,France,Eruope]
-            // Object = { 
-              city: Paris,
-              country: France,
-              continent: Eruope
+            //AREA OF A TRIANGLE
+            
+            function triArea(base, height) {
+              var area = (base*height)/2;
+              return area;
             }
-
-            let cityFacts = {
-
-              name:"Asmara",
-              population:1000000,
-              continent:"Africa",
+            triArea(3,2);
           
-              displayCityFacts: function(){
-                console.log(this.name + ' has a population of ' + this.population + ' and is situated in ' + this.continent);
-              }
-           }
-           
-          cityFacts.displayCityFacts();
+           </code>
+         </pre>
+
+         <pre>
+           <code class="language-js">
+             //RETURN FIRST ITEM IN THE ARRAY
+             function getFirstValue(arr) {
+              return arr[0];
+            }
+            getFirstValue([1, 2, 3]);
+            //1
            </code>
          </pre>
       </article>
      </section>
 
-
+      <!-- FOOTER -->
      <footer>
       <div class="footer-text">
        <div class="social-media-icons">

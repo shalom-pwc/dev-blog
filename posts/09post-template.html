@@ -40,42 +40,69 @@
       </div>
     </div>
   </header>
-    
+
      <!-- BLOG CONTENT-->
 
      <section class="post-content">
       <article class="post-item blog">
-        <h2>Intro to JAVA SCRIPT</h2>
-        <small>April 28, 2020. 3 min read . 8 min . 8 comments</small>
-        <p>This article offers a sample of basic JS syntax that i have learned inclass. JS is a programming language and its C based language. Programming is a set of instraction that gives to a computer to perform specific task. We need a browser to run JS.</p>
+        <h2>JS LOOPS</h2>
+        <small>may 10, 2020. 3 min read . 8 min . 8 comments</small>
+        <p>Looping statements in JavaScript execute an instruction (code) repeatedly until a particular defined condition is met. </p>
+        <ol>
+          <li> <span class="bold">Initialization:</span> The initialization expression initializes the loop.</li>
+          <li><span class="bold">
+            condition:</span> The condition is an expression that is evaluated once before every iteration. </li>
+          <li><span class="bold">
+            Post-expression:</span> The for loop statement also evaluates the post-expression after each loop iteration. </li>
+        </ol>
+        <figure>
+          <img class="loop" src="https://cdn.javascripttutorial.net/wp-content/uploads/2020/01/JavaScript-for-Loop.png" alt="">
+        </figure>
+        <h2>for loop</h2>
         <p>Example </p>
          
          <pre>
            <code class="language-js">
-            // This is single line comments 
-            // VARIABLES we need to have a container to store the data that we call variables in JS.
-            let num = 32;
-            let str = "selam";
-            let float = 2.1;
-            let boolean = true;
-            let remainder = 10 % 5;
-
-            // ARRAYS
-            let name = [selam, eva, dani];
-
-            // FUNCTIONS
-            function minTosec(min) {
-              let sec = min * 60;
-              return sec;
-            }
-            console.log(minTosec(40));
+           //Example 1
+            for (let counter = 1; counter < 5; counter++) {
+              console.log('Inside the loop:' + counter);
+           }
+          console.log('Outside the loop:' + counter);
           
+          //Example 2
+
+          const arr = ['cat', 'dog', 'fish'];
+            for (i = 0; i < arr.length; i++) { 
+              console.log(arr[i])
+            }
+            // cat
+            // dog
+            // fish
+      
            </code>
          </pre>
+
+         <h2>forEach loop</h2>
+         <p>forEach is an Array method that we can use to execute a function on each element in an array. It can only be used on Arrays, Maps, and Sets.</p>
+         <p>Example </p>
+          
+          <pre>
+            <code class="language-js">
+            
+              const arr = ['cat', 'dog', 'fish'];
+              arr.forEach(function (element) {
+                console.log(element);
+              });
+              // cat
+              // dog
+              // fish
+           
+            </code>
+          </pre>
       </article>
      </section>
 
-
+       <!-- FOOTER -->
      <footer>
       <div class="footer-text">
        <div class="social-media-icons">
@@ -88,6 +115,7 @@
        <p>Selam Dev Blog, Copyright &copy; 2020</p>
       </div>
      </footer>
+
 
      <script src="../assets/plugins/prism/prism.js"></script>
 </body>

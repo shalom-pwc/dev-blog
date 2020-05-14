@@ -40,69 +40,55 @@
       </div>
     </div>
   </header>
+    
+    <main>
+     
+    </main>
 
      <!-- BLOG CONTENT-->
 
      <section class="post-content">
       <article class="post-item blog">
-        <h2>JS LOOPS</h2>
-        <small>may 10, 2020. 3 min read . 8 min . 8 comments</small>
-        <p>Looping statements in JavaScript execute an instruction (code) repeatedly until a particular defined condition is met. </p>
-        <ol>
-          <li> <span class="bold">Initialization:</span> The initialization expression initializes the loop.</li>
-          <li><span class="bold">
-            condition:</span> The condition is an expression that is evaluated once before every iteration. </li>
-          <li><span class="bold">
-            Post-expression:</span> The for loop statement also evaluates the post-expression after each loop iteration. </li>
-        </ol>
-        <figure>
-          <img class="loop" src="https://cdn.javascripttutorial.net/wp-content/uploads/2020/01/JavaScript-for-Loop.png" alt="">
-        </figure>
-        <h2>for loop</h2>
+        <h2>ObjectS JAVA SCRIPT</h2>
+        <small>may 01, 2020. 3 min read . 8 min . 8 comments</small>
+        <p>An object can be created with figure brackets {…} with an optional list of properties. A property is a “key: value” pair, where key is a string (also called a “property name”), and value can be anything. </p>
         <p>Example </p>
+
+        <pre>
+          <code class="language-js">
+            let user = {     // an object
+              name: "Tom",  // by key "name" store value "John"
+              age: 30        // by key "age" store value 30
+            };
+            // get property values of the object:
+            alert( user.name ); // John
+            alert( user.age ); // 30
+          </code>
+        </pre>
          
          <pre>
            <code class="language-js">
-           //Example 1
-            for (let counter = 1; counter < 5; counter++) {
-              console.log('Inside the loop:' + counter);
-           }
-          console.log('Outside the loop:' + counter);
-          
-          //Example 2
 
-          const arr = ['cat', 'dog', 'fish'];
-            for (i = 0; i < arr.length; i++) { 
-              console.log(arr[i])
-            }
-            // cat
-            // dog
-            // fish
-      
+             //Extract City Facts
+            
+            let cityFacts = {
+
+              name:"Asmara",
+              population:1000000,
+              continent:"Africa",
+          
+              displayCityFacts: function(){
+                console.log(this.name + ' has a population of ' + this.population + ' and is situated in ' + this.continent);
+              }
+           }
+           
+          cityFacts.displayCityFacts();
            </code>
          </pre>
-
-         <h2>forEach loop</h2>
-         <p>forEach is an Array method that we can use to execute a function on each element in an array. It can only be used on Arrays, Maps, and Sets.</p>
-         <p>Example </p>
-          
-          <pre>
-            <code class="language-js">
-            
-              const arr = ['cat', 'dog', 'fish'];
-              arr.forEach(function (element) {
-                console.log(element);
-              });
-              // cat
-              // dog
-              // fish
-           
-            </code>
-          </pre>
       </article>
      </section>
 
-
+      <!-- FOOTER -->
      <footer>
       <div class="footer-text">
        <div class="social-media-icons">
@@ -115,7 +101,6 @@
        <p>Selam Dev Blog, Copyright &copy; 2020</p>
       </div>
      </footer>
-
 
      <script src="../assets/plugins/prism/prism.js"></script>
 </body>

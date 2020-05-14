@@ -120,11 +120,11 @@
 
 
               // Target element → classic approach
-              //const main = document.querySelector('main'); console.log(main);
+              const main = document.querySelector('main'); console.log(main);
 
               // Target element → awesome approach
               const main = $('main'); console.log(main);
-              //main.setAttribute('class');
+              main.setAttribute('class');
 
               // →→→ Manage attributs
               $('h1').setAttribute('id', 'main-title');
@@ -151,7 +151,7 @@
               main.insertBefore(p1, $('#p2'));
 
               //Remove an element
-              //$('main').remove();
+              $('main').remove();
 
               $('main').append(p1);
 
@@ -177,12 +177,7 @@
 
               div1.prepend(div2);
 
-              //$('body').insertBefore(div1, $('script'));
-
-
-
-              // This will only touch the first item of his kind
-
+              $('body').insertBefore(div1, $('script'));
 
               // This will touch all of them
               console.log($$('p'));
@@ -195,9 +190,6 @@
               $('#p3').style.backgroundColor = '#f00';
               $('#p4').style.cssText = 'background-color: #fc0; color: #fff'; 
 
-
-
-              // →→→ INSERT, APPEND, PREPEND
 
           </code>
         </pre>
