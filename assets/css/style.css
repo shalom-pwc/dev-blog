@@ -77,7 +77,7 @@ ol {
 
 .button_1 {
   height: 38px;
-  background:  #e8491d;
+  background:  #fcb23b;
   padding-left: 20px;
   padding-right: 20px;
   color: #ffffff;
@@ -87,18 +87,18 @@ ol {
 /* COLOR */
 
 .darkcolor {
-  color: #35424a;
+  color: #167f77;
 }
 .dark {
   padding: 15px;
-  background: #35424a;
+  background: #167f77;
   color: #ffffff;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .orange {
-  color: #e8491d;
+  color: #fcb23b;
 }
 
 /* MARGIN */
@@ -154,11 +154,11 @@ ol {
 
 /* Header */
 header {
-  background-color: #35424a;
+  background-color: #167f77;
   color: #ffffff;
   padding-top: 2em;
   min-height: 70px;
-  border-bottom: #e8491d 3px solid;
+  border-bottom: #fcb23b 3px solid;
   position: fixed; 
   width: 100%;
   z-index: 1;
@@ -187,7 +187,7 @@ header li {
   display: inline-block;
 }
 header .highlight, header .current a {
-  color: #e8491d;
+  color: #fcb23b;
   font-weight: bold;
 }
 
@@ -227,7 +227,7 @@ header .highlight, header .current a {
 
 #showcase p {
   font-size: 1.25em;
-  text-shadow: .6px .6px #35424a;
+  text-shadow: .6px .6px #167f77;
 }
 
 
@@ -236,7 +236,7 @@ header .highlight, header .current a {
 #newsletter {
   padding: 20px;
   color: #ffffff; 
-  background-color: #35424a;
+  background-color: #167f77;
 }
 
 #newsletter h3 {
@@ -302,7 +302,7 @@ header .highlight, header .current a {
   margin-bottom: 1em;
 }
 .post-item a {
-  color: #e8491d;
+  color: #fcb23b;
 }
 .blog {
   padding-top: 6em;
@@ -345,7 +345,7 @@ footer {
   padding: 1em 0;
   margin-top: 20px;
   color: #ffffff;
-  background-color: #e8491d;
+  background-color: #fcb23b;
 }
 
 .social-media-icons i {
@@ -392,7 +392,7 @@ footer {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: #35424a;
+    background-color: #167f77;
     top: 105px;
     left: -100%;
     text-align: center;

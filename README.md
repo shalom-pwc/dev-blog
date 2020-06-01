@@ -1,5 +1,5 @@
 # SELAM'S DEV-BLOG  
-Dev-blog is my first project to show what i have learned in class. Its simple and made from scratch.http://github.com - automatic![click here to see my blog]https://shalom-pwc.github.io/dev-blog/
+Dev-blog is my first project to show what i have learned in class. Its simple and made from scratch.
 
 ## My Blog Structure
 
